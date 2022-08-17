@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Espaço de perguntas</title>
 </head>
 <body>
     <h3>7) Quem foi seu maior rival?</h3>
+    <div id="container">
     <form method="POST" action="perg07.php">
         <input type="radio" name="rival" value="prost">Prost<br>
         <input type="radio" name="rival" value="alesi" >Alesi<br>
@@ -15,12 +17,13 @@
         <input type="radio" name="rival" value="rubinho">rubinho<br>
         <button>Resposta</button>
     </form>
+    </div>
         <?php
         //require_once('perg01.php');
         $rival = $_POST['rival'];
 
             if($rival == 'prost'){
-                echo 'Parabéns você acertou a seguda pergunta<br>';
+                echo '<div id="correto">Parabéns você acertou a primeira pergunta<div><br>';
                 echo '<img src="img/AyrtonRival.jpeg"<br>';
                 
                 /*echo '<form method="POST" action="perg02.php">

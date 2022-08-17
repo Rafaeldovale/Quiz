@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Espaço de perguntas</title>
 </head>
 <body>
     <h3>10) Quantas temporadas ele correu na F1?</h3>
+    <div id="container">
     <form method="POST" action="perg10.php">
         <input type="radio" name="temporada" value="10">10<br>
         <input type="radio" name="temporada" value="15" >15<br>
@@ -15,12 +17,13 @@
         <input type="radio" name="temporada" value="5">5<br>
         <button>Resposta</button>
     </form>
+    </div>
         <?php
         //require_once('perg01.php');
         $temporada = $_POST['temporada'];
 
             if($temporada == '10'){
-                echo 'Parabéns você acertou a seguda pergunta<br>';
+                echo '<div id="correto">Parabéns você acertou a primeira pergunta<div><br>';
                 echo '<img src="img/AyrtonTemporadas.jpeg"<br>';
                 
                 /*echo '<form method="POST" action="perg02.php">

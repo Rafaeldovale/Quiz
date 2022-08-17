@@ -1,0 +1,40 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ccc;
+    text-align: center;
+}
+h3{
+    color: rgb(201, 63, 63);
+    position: relative;
+}
+#container{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 240px;
+    height: 160px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+#botao{
+    text-align: center;
+}
+#correto{
+    font-size: 25px;
+    color: blue;
+    text-shadow: 1px 1px 2px black;
+}
+img#senna, img.img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+   
+}
+

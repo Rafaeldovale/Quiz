@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Espaço de perguntas</title>
 </head>
 <body>
     <h3>9) Quantos títulos ele teve?</h3>
+    <div id="container">
     <form method="POST" action="perg09.php">
         <input type="radio" name="titulos" value="3">3<br>
         <input type="radio" name="titulos" value="4" >4<br>
@@ -15,12 +17,13 @@
         <input type="radio" name="titulos" value="0">0<br>
         <button>Resposta</button>
     </form>
+    </div>
         <?php
         //require_once('perg01.php');
         $titulos = $_POST['titulos'];
 
             if($titulos == '3'){
-                echo 'Parabéns você acertou a seguda pergunta<br>';
+                echo '<div id="correto">Parabéns você acertou a primeira pergunta<div><br>';
                 echo '<img src="img/AyrtonTitulos.jpeg"<br>';
                 
                 /*echo '<form method="POST" action="perg02.php">
